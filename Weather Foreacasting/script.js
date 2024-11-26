@@ -119,7 +119,7 @@ const getWeatherDetails = (cityName, lat, lon) => {
         });
 };
 
-
+// Function to get city coordinates
 const getCityCoordinates = () => {
     const cityName = cityInput.value.trim();
     if (!cityName) return;
@@ -181,7 +181,7 @@ cityInput.addEventListener("keyup", e => e.key === "Enter" && getCityCoordinates
 const options = {
     key: 'H3MzWInDcItupZcD6PvvOdQ92hG6mNKw', // Replace with your Windy API key
     lat: 19.0760, // Default latitude for Mumbai
-    lon: 72.8777, // Default longitude for Mumbai
+    lon: 72.8777, 
     zoom: 10,
 };
 
@@ -214,7 +214,7 @@ const darkModeToggle = document.querySelector('.dark-mode-toggle');
 const body = document.body;
 const icon = darkModeToggle.querySelector('i');
 
-// Initialize dark mode based on saved preference
+
 if (localStorage.getItem('darkMode') === 'enabled') {
     body.classList.add('dark-mode');
     icon.classList.remove('fa-sun');
@@ -233,6 +233,7 @@ darkModeToggle.addEventListener('click', function () {
     } else {
         icon.classList.remove('fa-moon');
         icon.classList.add('fa-sun');
-        localStorage.setItem('darkMode', 'disabled'); 
+        localStorage.setItem('darkMode', 'disabled'); // Save preference to localStorage
+    }
 });
 

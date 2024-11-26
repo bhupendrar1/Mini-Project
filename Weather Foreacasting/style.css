@@ -23,10 +23,10 @@ body.dark-mode {
 }
 
 body.dark-mode h1  {
-    background-color: #244b73; /* Dark violet background in dark mode */
+    background-color: #244b73; 
 }
 .logo{
-    max-width: 60px; /* Adjust the size to your needs */
+    max-width: 60px; 
     margin-right: 10px;
     height: auto;
     margin-left: 10px;
@@ -161,7 +161,6 @@ h1::selection{
 
 }
 
-
 .map-sec{
 background-color: #5fdec9;
 height: 50%;
@@ -212,24 +211,21 @@ height: 50%;
     font-size: 1rem;
     color: #fff;
     border-radius: 4px;
-    /* background: #5372f0; */
     background: #f18d28;
 
 }
 /* changes on hover */
 .weather-input .search-btn:hover{
-    /* background: #5163ad; */
-    background: #c98037;
+   background: #c98037;
 
 }
 .weather-input .location-btn:hover{
     background: #515960;
-    /* background: #776B5D; */
+    
 
 }
 .weather-input .location-btn{
-    /* background: #6c757d; */
-    background: #776B5D;
+      background: #776B5D;
 
 }
 .weather-data{
@@ -238,7 +234,6 @@ height: 50%;
 }
 /* left side of the weather APP  Update Dashboard  */
 .current-weather:hover{
-    /* background: #5163ad; */
     background: #c98037;
 
 }
@@ -246,7 +241,6 @@ height: 50%;
     color: #fff;
     padding: 20px 70px 20px 20px ;
     border-radius: 6px;
-    /* background: #5372f0; */
     background: #f18d28;
     display: flex;
  justify-content:space-between ;
@@ -260,10 +254,10 @@ height: 50%;
  
 
 .graph-sec img {
-    width: 100px; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
-    max-width:100%; /* Ensure it doesn’t exceed its container */
-    max-height: 250px; /* Adjust the height as needed */
+    width: 100px; 
+    height: auto; 
+    max-width:100%; 
+    max-height: 250px; 
 
 }
 
@@ -278,8 +272,8 @@ height: 50%;
  
 .details {
      
-    width: 35%; /* Adjust width as needed */
-    height: 100%; /* Ensure it has a defined height */
+    width: 35%; 
+    height: 100%; 
 }
 .weather-data h4{
     margin-top: 12px;
@@ -308,7 +302,6 @@ height: 50%;
 
 }
 .weather-cards .card{
-    /* background: #6c757d; */
     background: #776B5D;
 
     list-style: none;
@@ -318,7 +311,6 @@ height: 50%;
     width: calc(100% / 5);
 }
 .weather-cards .card:hover{
-    /* background: #776B5D; */
     background: #515960;
 }
 .weather-cards .card img {
@@ -419,7 +411,7 @@ height: 50%;
 @media (max-width : 865px )  {
    
     .footer{
-        /* flex-wrap: wrap; */
+   /* flex-wrap: wrap; */
         flex-direction: column-reverse;
         padding: 20px;
         gap: 20px;
