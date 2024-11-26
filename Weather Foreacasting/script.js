@@ -58,7 +58,7 @@ const getAirQuality = (lat, lon) => {
             const aqiDescription = ["Good", "Fair", "Moderate", "Poor", "Very Poor"];
             const aqiText = aqiDescription[aqi - 1] || "Unknown";
             return aqiText;
-           // currentWeatherDiv.insertAdjacentHTML("beforeend", `<h4>Air Quality: ${aqiText}</h4>`);
+         
         })
         .catch(error => {
             console.error("Error fetching air quality data:", error);
@@ -91,12 +91,12 @@ const getWeatherDetails = (cityName, lat, lon) => {
                 return false;
             });
 
-            // Clear previous data
+           
             cityInput.value = "";
             currentWeatherDiv.innerHTML = "";
             weatherCardsDiv.innerHTML = "";
 
-            // Create weather cards
+            
             return getAirQuality(lat, lon)
             .then(aqiText => {
             fiveDaysForecast.forEach((weatherItem, index) => {
@@ -110,8 +110,7 @@ const getWeatherDetails = (cityName, lat, lon) => {
             // Log lat and lon before updating the map
             console.log(`Updating map to: Latitude: ${lat}, Longitude: ${lon}`);
             updateMap(lat, lon);  // Ensure this is called after the weather cards are generated
-            // Call the air quality function
-           // Fetch AQI data
+        
         });
     })
         .catch(error => {
@@ -120,7 +119,7 @@ const getWeatherDetails = (cityName, lat, lon) => {
         });
 };
 
-// Function to get city coordinates
+
 const getCityCoordinates = () => {
     const cityName = cityInput.value.trim();
     if (!cityName) return;
@@ -234,7 +233,6 @@ darkModeToggle.addEventListener('click', function () {
     } else {
         icon.classList.remove('fa-moon');
         icon.classList.add('fa-sun');
-        localStorage.setItem('darkMode', 'disabled'); // Save preference to localStorage
-    }
+        localStorage.setItem('darkMode', 'disabled'); 
 });
 
