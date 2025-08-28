@@ -53,8 +53,7 @@ Make sure you generate your API keys and update them in the project files.
 
 ## ⚙️ Setup & Installation
 1. Clone the repository:
-   ```bash
-   git clone gh repo clone bhupendrar1/Mini-Project
+   git clone https://github.com/bhupendrar1
 
 2. Navigate into the project:
     cd weather-app
